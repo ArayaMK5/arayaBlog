@@ -2,10 +2,6 @@
 title: About
 description: 게임 개발 희망인데 그거 빼고 다하는 개발자
 date: '2019-02-28'
-aliases:
-  - about-us
-  - about-hugo
-  - contact
 license: Araya-MK.5
 lastmod: '2022-10-04'
 menu:
