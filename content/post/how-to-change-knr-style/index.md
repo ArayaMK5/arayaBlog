@@ -5,11 +5,11 @@ date = "2022-09-28"
 description = "VSCode에서 C#의 중괄호 스타일을 BSD에서 K&R로 바꾸는 방법을 알아보고자 한다."
 tags = [
     "VSCode",
-    "C#"
+    "CSharp"
 ]
 categories = [
     "VSCode",
-    "C#",
+    "CSharp",
 ]
 series = ["KnR"]
 aliases = ["KnR"]

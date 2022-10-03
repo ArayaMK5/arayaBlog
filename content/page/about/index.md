@@ -1,13 +1,13 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
+description: 게임 개발 희망인데 그거 빼고 다하는 개발자
 date: '2019-02-28'
 aliases:
   - about-us
   - about-hugo
   - contact
-license: CC BY-NC-ND
-lastmod: '2020-10-09'
+license: Araya-MK.5
+lastmod: '2022-10-04'
 menu:
     main: 
         weight: -90
@@ -15,20 +15,50 @@ menu:
             icon: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+![](title.png)
 
-Hugo makes use of a variety of open source projects including:
+# 소개
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+안녕하세요.  
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+2020년부터 본격적으로 개발을 시작한 주니어 개발자 Araya-MK.5입니다.  
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+게임을 좋아해서 유니티 게임 개발쪽을 공부하게 되었습니다.  
 
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+다만 회사에서는 외부 플러그인 작업이 많아서 게임 개발이 아닌 플러그인 제작, QA, 서브 서버 프로그래밍등 다른 기술들을 배워버렸습니다.  
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+외부 플러그인은 자료가 많이 없었던지라 오랫동안 마감에 쫓기며 자료 조사하던 것이 억울(?)해서 기록겸 공유하려고 합니다.
+
+# 개발 언어
+
+## C#
+본업인 게임 개발을 유니티로 하다보니 자연스레 습득한 언어입니다.
+사실 유니티쪽 C#만 알고 윈폼이나 .Net은 거의 알지 못합니다.
+
+## 유니티
+게임 개발은 해보지 않고, 유니티에 필요한 플러그인 제작, 인스펙터 꾸미기 등 외적인 서브 작업들을 주로 하였습니다.  
+조만간 게임 한번 만들어보려고 합니다.
+
+
+## C++
+언리얼 한번 공부해보려고 시작한 언어입니다.
+
+게임 서버는 성능 때문에 무조건 C++이라고 해서 나중에 큰 도움이 될 거 같아 공부해보려고 합니다.
+
+## AWS
+서버와 통신하는 SDK를 만들면서 우연히 들여다 본 서비스였습니다.
+
+관리나 테스팅을 위해 몇번 사용을 해봤습니다만 직접 한땀한땀 개발을 해본적은 없습니다.
+
+람다부터 차근차근 시작하려고 합니다.
+
+
+## Python
+셀레니움으로 매일 코인을 입금하는 서브 프로젝트를 진행하기 위해 배우고 있는 언어입니다.  
+C언어 스타터로서 변수 지정을 안해도 되는게 참 신기하면서 익숙하지 않은 거 같습니다.
+
+## Android
+유니티 플러그인을 만들면서 제일 많이 들어다 본 친구입니다.  
+
+자바, 구글 보안 정책, 종속성(dependency), activity등 뭔가 될 거 같으면서 에러를 제일 많이 발생하게 했던 프로젝트였습니다.
+
