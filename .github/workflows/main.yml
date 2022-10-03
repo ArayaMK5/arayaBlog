@@ -1,34 +1,40 @@
-name: CI
-on: push
+name: Deploy Hugo
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Git checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Update theme
-        # (Optional)If you have the theme added as submodule, you can pull it and use the most updated version
-        run: git submodule update --init --recursive
+      - name: Disable quotePath
+        run: git config core.quotePath false
 
-      - name: Setup hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.64.0"
+          hugo-version: '0.103.0'
+          extended: true
 
       - name: Build
-        # remove --minify tag if you do not need it
-        # docs: https://gohugo.io/hugo-pipes/minification/
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
-          personal_token: ${{ secrets.TOKEN }}
-          external_repository: arayamk5.github.io
-          publish_dir: ./public
-          #   keep_files: true
-          user_name: ArayaMK5
-          user_email: arayamakas@gmail.com
+          personal_token: ${{ secrets.HUGO }}
+          external_repository: arayaMK5/arayamk5.github.io
           publish_branch: master
-        #   cname: example.com
+          publish_dir: ./public
+          cname: blog.burt.pe.kr
