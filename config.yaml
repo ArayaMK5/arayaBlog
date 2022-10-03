@@ -29,6 +29,8 @@ params:
     featuredImageField: image
     rssFullContent: true
     favicon: 
+        enabled: true
+        local: true
         src: img/favicon.ico
 
     footer:
