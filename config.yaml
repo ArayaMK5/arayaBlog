@@ -31,7 +31,7 @@ params:
     favicon: 
         enabled: true
         local: true
-        src: img/favicon.ico
+        src: img/avatar.png
 
     footer:
         since: 2022
