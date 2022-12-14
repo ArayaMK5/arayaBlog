@@ -1,7 +1,7 @@
 +++
 author = "Araya-Mk.5"
 title = "진화된 마케팅 그로스해킹(by 션 엘리스) - #Chapter2"
-date = "2022-11-30"
+date = "2022-12-08"
 description = "션 엘리스 저자의 그로스해킹 관련 책을 읽고 정리, chapter2"
 tags = [
     "Books"
