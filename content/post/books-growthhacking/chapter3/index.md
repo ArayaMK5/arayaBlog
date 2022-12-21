@@ -12,7 +12,7 @@ categories = [
 series = ["GrowthHacking"]
 aliases = ["GrowthHacking"]
 image = "before_after.png"
-slug = "growth-hacking-chapter2"
+slug = "growth-hacking-chapter3"
 +++
 
 # Chapter 3. 성장의 지렛대
